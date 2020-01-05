@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+.Front {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.button {
+  background-color: rgb(230, 17, 34); /* Green */
+  border: none;
+  top: 0;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  
+
+}
+
+form, .movie-card {
+  /* display: flex; */
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+  border: 3px solid red;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; 
+  background: url("/images/Background.jpg"); 
+  background-size: 100% 100%;
+}
+
+
+
+.current-rating {
+  margin-left: 30px;
+}
+
+.movie-card {
+  cursor: pointer;
+}
+
+.movie-card h3 {
+  display: inline-block;
+  margin: 0;
+}
+
+.card-rating {
+  float: right;
+}
+
+.card-genre {
+  float: right;
+  margin: 0;
+}
+/* Only when less than or equal to 800px in width */
+@media (max-width: 800px) {
+  p {
+    color: red;
+  }
+}
+/*
+  Only on screens less than or equal to 800px in width,
+  but wider than 500px
+*/
+@media screen and (max-width: 800px) and (min-width: 501px) {
+  p {
+    color: pink;
+  }
+}
+/* Only when printing */
+@media print {
+  p {
+    color: blue;
+  }
+}
+/* Only on screens in portrait mode */
+@media screen and (orientation: portrait) {
+  p {
+    color: green;
+  }
+}
